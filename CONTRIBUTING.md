@@ -13,7 +13,7 @@ export GOPATH=$(pwd)
 
 # Checkout project sources into your new go workspace
 go get -u github.com/improbable-eng/grpc-web/go
-cd $GOPATH/src/github.com/improbable-eng/grpc-web 
+cd $GOPATH/src/github.com/improbable-eng/grpc-web
 
 # Install go dependencies
 dep ensure
@@ -23,9 +23,9 @@ nvm use
 npm install
 ```
 
-Note you will also need to [install prototool](https://github.com/uber/prototool/blob/dev/docs/install.md) and add it to your `PATH` environment variable if you wish to re-generate the integration test proto files.
+Note you will also need to [install buf](https://github.com/bufbuild/buf) and add it to your `PATH` environment variable if you wish to re-generate the integration test proto files.
 
-## Testing Prerequisites 
+## Testing Prerequisites
 Before you run the tests for the first time, please follow these steps:
 
 ### Installing the Local Certificate
@@ -38,7 +38,7 @@ In order to run the Karma (Integration) tests, you will need to add the certific
 4. Select `misc/localhost.crt`
 5. Double click on the new `GRPC Web example dev server` certificate
 6. Expand the `Trust' section
-7. Change the `When using this certificate` option to `Always Trust` 
+7. Change the `When using this certificate` option to `Always Trust`
 8. Close the certificate details pop-up.
 
 Repeat the above process for `misc/localhostCA.pem`.
